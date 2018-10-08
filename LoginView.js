@@ -27,6 +27,9 @@ import {
   render() {
     return (
       <View style={styles.container}>
+
+       <Image style={styles.imageLogoContainer} source={require('./images/logoWithText.png')}/>
+
         <View style={styles.inputContainer}>
           <Image style={styles.inputIcon} source={{uri: 'https://png.icons8.com/message/ultraviolet/50/3498db'}}/>
           <TextInput style={styles.inputs}
@@ -68,6 +71,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#DCDCDC',
   },
+
+  imageLogoContainer: {
+    width:220,
+    height:60,
+    marginBottom:50,
+    flexDirection: 'row',
+    alignItems:'center'
+  },
+
   inputContainer: {
       borderBottomColor: '#F5FCFF',
       backgroundColor: '#FFFFFF',
